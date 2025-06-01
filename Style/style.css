@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+
+   --color-primary-1: #0F8F74;
+   --color-primary-2: #0A6653;
+   --color-primary-3: #121413;
+   --color-neutral-1: #000000;
+   --color-neutral-2: #FFFFFF;
+
+}
+
+* {
+
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Source Code Pro', 'mono space';
+
+}
+
+
+body {
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--color-neutral-1);
+   min-width: 100vh;
+   min-height: 100vh;
+   margin: 0;
+   padding: 0;
+   color: var(--color-primary-3);
+
+}
+
+#div-principal {
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 12px;
+   text-align: center;
+   width: 100%;
+
+}
+
+#password_img {
+   height: auto;
+   display: block;
+   margin: 0 auto;
+   width: 80px;
+
+
+}
+
+#div_password {
+
+   width: 100%;
+   max-width: 500px;
+   min-height: 25px;
+   align-items: center;
+   margin-bottom: 12px;
+   background-color: var(--color-primary-3);
+   display: none;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 10px;
+
+}
+
+#div_password.show {
+   display: flex;
+}
+
+#title {
+
+   color: var(--color-neutral-2);
+   font-weight: 400;
+   margin-bottom: 15px;
+   text-align: center;
+
+}
+
+#password {
+
+   color: var(--color-neutral-2);
+   font-weight: 500;
+   padding: 10px 20px;
+   text-justify: auto;
+   font-size: 17px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   font-family: 'Inconsolata', 'mono space'
+
+
+}
+
+#password_items {
+
+   width: 100%;
+   min-width: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: right;
+   background-color: var(--color-primary-3);
+   color: var(--color-neutral-2);
+   border-radius: 10px;
+   padding: 15px 18px;
+   font-size: 17px;
+   gap: 5px;
+}
+
+#size:focus {
+
+   outline: 1px solid var(--color-neutral-1);
+
+}
+
+#generate {
+
+   background-color: var(--color-primary-1);
+   border: none;
+   margin-top: 12px;
+   padding: 10px 0;
+   border-radius: 4px;
+   color: var(--color-neutral-2);
+   font-size: 16px;
+   font-weight: 500;
+   cursor: pointer;
+   transition: color .4s;
+
+}
+
+#generate:hover {
+
+   background-color: var(--color-primary-2);
+
+}
+
+#copy {
+
+   background-color: transparent;
+   display: flex;
+   gap: 12px;
+   border: none;
+   color: var(--color-primary-1);
+   cursor: pointer;
+   padding-right: 8px;
+
+}
+
+#copy:hover {
+
+   color: var(--color-primary-2);
+   transition: color .4s;
+}
+
+.item {
+
+   display: flex;
+   gap: 14px;
+
+}
+
+#size {
+   width: 40px;
+   text-align: center;
+   border: none;
+   border-radius: 4px;
+}
+
+#size::-webkit-inner-spin-button,
+#size::-webkit-outer-spin-button {
+   opacity: 1;
+}
