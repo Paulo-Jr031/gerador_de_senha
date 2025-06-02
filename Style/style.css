@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
-
    --color-primary-1: #0F8F74;
    --color-primary-2: #0A6653;
    --color-primary-3: #121413;
@@ -10,7 +9,6 @@
 }
 
 * {
-
    margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -18,7 +16,6 @@
 }
 
 body {
-
    display: flex;
    align-items: center;
    justify-content: center;
@@ -31,7 +28,6 @@ body {
 }
 
 #div-principal {
-
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -48,7 +44,6 @@ body {
 }
 
 #div_password {
-
    width: 100%;
    max-width: 500px;
    min-height: 25px;
@@ -66,7 +61,6 @@ body {
 }
 
 #title {
-
    color: var(--color-neutral-2);
    font-weight: 400;
    margin-bottom: 15px;
@@ -74,7 +68,6 @@ body {
 }
 
 #password {
-
    color: var(--color-neutral-2);
    font-weight: 500;
    padding: 10px 20px;
@@ -87,7 +80,6 @@ body {
 }
 
 #password_items {
-
    width: 100%;
    min-width: 400px;
    display: flex;
@@ -103,12 +95,10 @@ body {
 }
 
 #size:focus {
-
    outline: 1px solid var(--color-neutral-1);
 }
 
 #generate {
-
    background-color: var(--color-primary-1);
    border: none;
    margin-top: 12px;
@@ -122,12 +112,10 @@ body {
 }
 
 #generate:hover {
-
    background-color: var(--color-primary-2);
 }
 
 #copy {
-
    background-color: transparent;
    display: flex;
    gap: 12px;
@@ -138,13 +126,11 @@ body {
 }
 
 #copy:hover {
-
    color: var(--color-primary-2);
    transition: color .4s;
 }
 
 .item {
-
    display: flex;
    gap: 14px;
 }
@@ -159,4 +145,39 @@ body {
 #size::-webkit-inner-spin-button,
 #size::-webkit-outer-spin-button {
    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+   body {
+      padding: 15px;
+      height: auto;
+      min-height: 100dvh;
+   }
+   
+   #password_items {
+      padding: 12px;
+      font-size: 15px;
+   }
+
+   #password_img {
+      width: 80px;
+   }
+
+   .item {
+      flex-wrap: wrap;
+      gap: 8px;
+   }
+
+   #generate {
+      padding: 12px;
+      font-size: 1rem;
+   }
+
+   #title {
+      font-size: 20px;
+   }
+
+   #password {
+      font-size: 12px;
+   }
 }
