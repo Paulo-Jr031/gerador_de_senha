@@ -147,37 +147,42 @@ body {
    opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) { 
    body {
-      padding: 15px;
-      height: auto;
-      min-height: 100dvh;
+      padding: 15px 10px; 
    }
    
-   #password_items {
-      padding: 12px;
-      font-size: 15px;
+   #title {
+      font-size: 20px; 
+      margin-bottom: 20px;
+   }
+   
+   .item {
+      flex-direction: column; 
+      align-items: flex-start;
+      gap: 5px;
+   }
+   
+   #generate {
+      width: 100%; 
+      padding: 12px; 
    }
 
    #password_img {
-      width: 80px;
+      width: 60px; 
+   }
+   
+   #size {
+      width: 50px; 
    }
 
-   .item {
-      flex-wrap: wrap;
-      gap: 8px;
-   }
-
-   #generate {
-      padding: 12px;
-      font-size: 1rem;
-   }
-
-   #title {
-      font-size: 20px;
-   }
-
-   #password {
+   #password_items {
       font-size: 12px;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+   label {
+      margin-bottom: 10px;
    }
 }
+
